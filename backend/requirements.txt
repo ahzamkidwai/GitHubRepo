@@ -9,7 +9,7 @@ python-dotenv
 GitPython
 
 # AST parsing
-tree-sitter
+tree-sitter>=0.25,<0.27
 tree-sitter-language-pack
 
 # Utilities
