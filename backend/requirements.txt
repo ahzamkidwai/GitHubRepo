@@ -1,0 +1,16 @@
+
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+python-dotenv
+
+# GitHub repository ingestion
+GitPython
+
+# AST parsing
+tree-sitter
+tree-sitter-language-pack
+
+# Utilities
+requests
