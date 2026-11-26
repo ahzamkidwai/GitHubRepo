@@ -3,13 +3,9 @@ from fastapi import FastAPI
 
 from app.config import APP_NAME
 
-from app.api.repositories import (
-    router as repository_router
-)
-
-from app.api.analysis import (
-    router as analysis_router
-)
+from app.api.repositories import router as repository_router
+from app.api.analysis import router as analysis_router
+from app.api.chunks import router as chunks_router
 
 
 app = FastAPI(
@@ -21,7 +17,7 @@ app = FastAPI(
 
 app.include_router(repository_router)
 app.include_router(analysis_router)
-
+app.include_router(chunks_router)
 
 @app.get("/")
 def root():
